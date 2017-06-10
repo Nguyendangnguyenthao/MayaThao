@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<title>BUNNY DREAM Cosmetics</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.w3-sidebar a {font-family: "Roboto", sans-serif}
+body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+</style>
+<body class="w3-content" style="max-width:1200px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
+  <div class="w3-container w3-display-container w3-padding-16">
+    <i onClick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
+    <h3 class="w3-wide"><b>BUNNY DREAM</b></h3>  
+  </div>
+  <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
+   <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+  <a href="#" class="w3-bar-item w3-button"> <i class="fa fa-home"></i> Trang chủ</a>
+    <a href="#" class="w3-bar-item w3-button"><i class="fa fa-align-justify"></i> Sản phẩm bán chạy</a>
+    <a onClick="myAccFunc()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
+      Mỹ phẩm <i class="fa fa-caret-down"></i>
+    </a>
+    <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+      <a href="#" class="w3-bar-item w3-button w3-light-grey"><i class="fa fa-caret-right w3-margin-right"></i>Chống nắng</a>
+      <a href="#" class="w3-bar-item w3-button">Chăm sóc da mặt</a>
+      <a href="#" class="w3-bar-item w3-button">Chăm sóc cơ thể</a>
+      <a href="#" class="w3-bar-item w3-button">Trang điểm</a>
+    </div>
+    <a href="#" class="w3-bar-item w3-button">Dụng cụ làm đẹp</a>
+    <a href="#" class="w3-bar-item w3-button">Cọ trang điểm</a>
+    <a href="#" class="w3-bar-item w3-button">Tóc và móng tay</a>
+    <a href="#" class="w3-bar-item w3-button">Phụ kiện khác</a>
+  </div>
+  <a href="#footer" class="w3-bar-item w3-button w3-padding"><i class="fa fa-phone"></i> Liên hệ</a> 
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding" onClick="document.getElementById('newsletter').style.display='block'"><i class="fa fa-envelope"></i> Nhận thông báo</a> 
+  <a href="#footer"  class="w3-bar-item w3-button w3-padding"><i class="fa fa-heart"></i> Subscribe</a>
+  <br>
+  <br>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
+  <div class="w3-bar-item w3-padding-24 w3-wide">LOGO</div>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onClick="w3_open()"><i class="fa fa-bars"></i></a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onClick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:250px">
+
+  <!-- Push down content on small screens -->
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+  
+  <!-- Top header -->
+  <header class="w3-container w3-xlarge">
+    <p class="w3-left">Cosmetic Brand For Teen</p>
+    <p class="w3-right">
+      <i class="fa fa-shopping-cart w3-margin-right"></i>
+      <i class="fa fa-search"></i>
+    </p>
+  </header>
+
+
+
+  <!-- Image header -->
+  <div class="w3-display-container w3-container">
+    <img src="Mockup Package Bunny Cosmetic final.jpg" alt="cosmetics" style="width:100%">
+    <div class="w3-display-bottomleft w3-text-white" style="padding:24px 48px">
+     
+      <h3 class="w3-hide-large">Dành riêng cho một mùa hè năng động<br> với những trải nhiệm mới mẻ cho làn da teen</h3>
+      <p><a href="#Cosmetic Brand For Teen" class="w3-button w3-blue w3-padding-large w3-large">Tìm hiểu ngay</a></p>
+    </div>
+  </div>
+
+  <div class="w3-container w3-text-white" id="Cosmetic Brand For Teen">
+    <p>8 items</p>
+  </div>
+
+  <!-- Product grid -->
+  <div class="w3-row">
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <img src="srm.png" style="width:100%" height="300">
+        <p>Sữa rửa mặt sạch sâu<br><b>150.000đ</b></p>
+      </div>
+      <div class="w3-container">
+        <img src="cream.png" style="width:100%" height="300">
+        <p>Kem dưỡng ẩm sáng da<br><b>250.000đ</b></p>
+      </div>
+    </div>
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <div class="w3-display-container">
+          <img src="kcn.png" style="width:115%" height="300">
+          <span class="w3-tag w3-display-topleft">New</span>
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button">Mua hàng <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>Kem chống nắng <br><b>120.000đ</b></p>
+      </div>
+      <div class="w3-container">
+        <img src="son.png" style="width:100%" height="300">
+        <p>Son dưỡng ẩm Olive<br><b>80.000đ</b></p>
+      </div>
+    </div>
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <img src="Mask Bunny Cosmetic new.jpg" style="width:180%" height="300">
+        <p>Mặt nạ giấy dưỡng da <br><b>20.000đ</b></p>
+      </div>
+      <div class="w3-container">
+        <div class="w3-display-container">
+          <img src="xk.png" style="width:115%" height="300">
+          <span class="w3-tag w3-display-topleft">Sale</span>
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button">Mua hàng <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>Xịt khoáng hạ nhiệt<br><b class="w3-text-red">140.000đ</b></p>
+      </div>
+    </div>
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <img src="Mockup Package Bunny Cosmetic final.jpg" style="width:100%" height="300">
+        <p>Trọn bộ sản phẩm mùa hè<br><b>750.000đ + Free Shipping</b></p>
+      </div>
+      <div class="bag.png">
+        <img src="bag.png" style="width:90%" height="300">
+        <p>Comno 10 mặt nạ dưỡng da toàn diện<br><b>180.000đ + Free Shipping</b></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Subscribe section -->
+  <div class="w3-container w3-gray w3-padding-32">
+  
+    <h1>Subscribe</h1>
+    <p>To get special offers and VIP treatment:</p>
+    <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail" style="width:100%"></p>
+    <button type="button" class="w3-button w3-blue w3-margin-bottom">Subscribe</button>
+  </div>
+  
+  <!-- Footer -->
+  <footer class="w3-padding-64 w3-light-grey w3-small w3-center" id="footer">
+    <div class="w3-row-padding">
+      <div class="w3-col s4">
+        <h4>Contact</h4>
+        <p>Questions? Go ahead.</p>
+        <form action="/action_page.php" target="_blank">
+          <p><input class="w3-input w3-border" type="text" placeholder="Name" name="Name" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Email" name="Email" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Subject" name="Subject" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Message" name="Message" required></p>
+          <button type="submit" class="w3-button w3-block w3-blue">Send</button>
+        </form>
+      </div>
+
+      <div class="w3-col s4">
+        <h4>About</h4>
+        <p><a href="#">About us</a></p>
+        <p><a href="#">We're hiring</a></p>
+        <p><a href="#">Support</a></p>
+        <p><a href="#">Find store</a></p>
+        <p><a href="#">Shipment</a></p>
+        <p><a href="#">Payment</a></p>
+        <p><a href="#">Gift card</a></p>
+        <p><a href="#">Return</a></p>
+        <p><a href="#">Help</a></p>
+      </div>
+
+      <div class="w3-col s4 w3-justify">
+        <h4>Store</h4>
+        <p><i class="fa fa-fw fa-map-marker"></i> Company Name</p>
+        <p><i class="fa fa-fw fa-phone"></i> 0044123123</p>
+        <p><i class="fa fa-fw fa-envelope"></i> ex@mail.com</p>
+        <h4>We accept</h4>
+        <p><i class="fa fa-fw fa-cc-amex"></i> Amex</p>
+        <p><i class="fa fa-fw fa-credit-card"></i> Credit Card</p>
+        <br>
+        <i class="fa fa-facebook-official w3-hover-opacity w3-large"></i>
+        <i class="fa fa-instagram w3-hover-opacity w3-large"></i>
+        <i class="fa fa-snapchat w3-hover-opacity w3-large"></i>
+        <i class="fa fa-pinterest-p w3-hover-opacity w3-large"></i>
+        <i class="fa fa-twitter w3-hover-opacity w3-large"></i>
+        <i class="fa fa-linkedin w3-hover-opacity w3-large"></i>
+      </div>
+    </div>
+  </footer>
+
+  <div class="w3-gray w3-center w3-padding-24">Edited by <a href="https://www.facebook.com/maya12398" title="Maya" target="_blank" class="w3-hover-opacity">Maya</a></div>
+
+  <!-- End page content -->
+</div>
+
+<!-- Newsletter Modal -->
+<div id="newsletter" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom" style="padding:32px">
+    <div class="w3-container w3-white w3-center">
+      <i onClick="document.getElementById('newsletter').style.display='none'" class="fa fa-remove w3-right w3-button w3-transparent w3-xxlarge"></i>
+      <h2 class="w3-wide">NEWSLETTER</h2>
+      <p>Join our mailing list to receive updates on new arrivals and special offers.</p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
+      <button type="button" class="w3-button w3-padding-large w3-red w3-margin-bottom" onClick="document.getElementById('newsletter').style.display='none'">Subscribe</button>
+    </div>
+  </div>
+</div>
+
+
+
+</body>
+</html>
